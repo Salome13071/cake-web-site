@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    background: none;
+}
+
+body {
+    overflow-x: hidden !important;
+    background-size: contain;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button,
+input {
+    cursor: pointer;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(12px);
+    z-index: 9;
+}
+
+.left-gap {
+    margin-left: 111px;
+
+}
+
+.header-container {
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    padding: 36px 0px;
+}
+
+nav ul li a {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    transition: 0.3s;
+    padding: 36px 0px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+}
+
+.home-text {
+    color: #FF4A22;
+}
+
+nav ul li a:hover {
+    color: #FF4A22;
+    border-color: #FF4A22;
+}
+
+
+#subscribe {
+    display: flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #FF4A22;
+}
+
+
+.subscribe-btn {
+    color: #FF4A22;
+    border-color: #FF4A22;
+}
+
+.subscribe-btn:hover {
+    color: rgb(46, 29, 17);
+}
+
+/* ------   main ------ */
+
+.first-part {
+    display: flex;
+    align-items: center;
+    margin-top: 88px;
+    gap: 80px;
+    /* padding-left: 111px; */
+}
+
+.first-part-text {
+    width: 460px;
+}
+
+.recipes-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.recipes-p {
+    color: rgba(18, 16, 61, 0.80);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 16px;
+    
+}
+
+.order-reseller-btn{
+    display: flex;
+    gap: 10px;
+    margin-top: 32px;
+}
+
+.order-reseller-btn button {
+    padding: 10px 24px;
+    border-radius: 20px;
+}
+
+.order-btn {
+    color: #FFF;
+    background: #FF4A22;
+}
+
+.reseller-btn{
+    color: #FF4A22;
+    background: rgba(255, 74, 34, 0.15);
+}
+
+#first-part-img {
+    display: flex;
+    gap: 32px;
+
+}
+
+.smile-icon{
+position: relative;
+}
+
+.face-icon{
+    padding: 10px 24px;
+    border-radius: 20px;
+    background: #FFF;
+}
