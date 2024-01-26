@@ -889,12 +889,12 @@ footer {
         padding-top: 58px;
         height: 390px;
     }
-    
+
     .girl-image {
-max-width: 330px;
+        max-width: 330px;
     }
 
-    .girl-image img{
+    .girl-image img {
         max-width: 330px;
     }
 
@@ -935,4 +935,3 @@ max-width: 330px;
         gap: 60px;
     }
 }
-
