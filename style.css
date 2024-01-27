@@ -275,7 +275,7 @@ nav ul li a:hover {
 
 
 .popular-menu {
-    width: 1218px;
+    max-width: 1218px;
     margin: 100px auto;
 }
 
@@ -404,8 +404,6 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 150px;
-    /* height: 454px;
-    width: 1440px; */
     margin: auto;
     display: flex;
     justify-content: center;
@@ -414,8 +412,8 @@ nav ul li a:hover {
 }
 
 .black-cake-text {
-    width: 539px;
-    height: 219px;
+    max-width: 540px;
+    /* height: 219px; */
     border-radius: 12px;
     background: rgba(51, 51, 51, 0.25);
     display: block;
@@ -443,14 +441,14 @@ nav ul li a:hover {
 
 .recipe-main-box {
 
-    height: 574px;
+    /* height: 574px; */
     border-radius: 20px;
     background: #FFF;
     margin-top: 54px;
     box-shadow: 0px 15px 30px 0px rgba(224, 224, 236, 0.80);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 1218px;
+    max-width: 1218px;
     margin: 100px auto;
     gap: 32px;
 }
@@ -464,21 +462,22 @@ nav ul li a:hover {
 .two-chevron {
     display: flex;
     justify-content: space-between;
-    margin-top: -300px;
+    position: relative;
+    top: -300px;
 
 }
 
 
 .cookies-image-4 {
-    width: 125px;
-    height: 420px;
+    max-width: 125px;
+    /* height: 420px; */
     display: grid;
-    gap: 20px;
+    /* gap: 20px; */
     padding-top: 84px;
 }
 
 .home-chokolate-main-box {
-    width: 520px;
+    max-width: 520px;
     padding-top: 80px;
 }
 
@@ -547,12 +546,12 @@ nav ul li a:hover {
 }
 
 .folowers-img-box {
-    display: flex;
+    display: inline-flex;
 }
 
 .folowers-img {
     display: inline-flex;
-    width: 92px;
+    max-width: 92px;
     height: 30px;
 }
 
@@ -588,20 +587,21 @@ nav ul li a:hover {
 }
 
 .type-comment {
-    width: 265px;
+    max-width: 265px;
     height: 39px;
     border-radius: 30px;
     border: 0.5px solid #FF4A22;
     background: #FFF;
     display: flex;
     align-items: center;
-    margin-right: 45px;
+    justify-content: flex-end;
+    /* margin-right: 45px; */
     padding-left: 16px;
 }
 
 .type-comment span {
     position: absolute;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 }
 
 
@@ -660,8 +660,6 @@ footer {
 }
 
 .about-us {
-    width: 116px;
-    height: 158px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -697,8 +695,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-    width: 263px;
-    height: 129px;
+    
 }
 
 .contact-us span {
@@ -722,7 +719,7 @@ footer {
 
 
     .popular-menu {
-        width: 700px;
+        max-width: 700px;
         margin: 60px 0;
     }
 
@@ -732,12 +729,20 @@ footer {
     }
 
     .black-cake {
-        width: 800px;
+        /* width: 800px; */
     }
 
     .cookies-image-4 {
         display: none;
     }
+}
+ 
+@media screen {
+    .grid-section-block {
+        margin: auto;
+
+    }
+    
 }
 
 @media screen and (max-width:1110px) {
@@ -834,7 +839,7 @@ footer {
 
     .order-reseller-btn {
         margin-bottom: 12px;
-        width: 300px;
+        /* width: 300px; */
         display: flex;
         justify-content: center;
         margin-top: 8px;
@@ -850,12 +855,12 @@ footer {
 
     .grid-section {
         grid-template-columns: 1fr;
-        padding: 20px;
+        padding-top: 20px;
 
     }
 
     .popular-menu {
-        max-width: 75%;
+        /* max-width: 75%; */
         margin: 60px 0;
 
     }
@@ -871,11 +876,20 @@ footer {
     }
 
     .black-cake {
-        width: 420px;
+        padding: 20px;
+    }
+    
+    .black-cake-text{
+        padding: 20px;
+
     }
 
     .black-cake-text p {
         font-size: 12px;
+    }
+
+    .black-cake-text button{
+        margin: 10px;
     }
 
     .recipe-main-box {
@@ -885,29 +899,36 @@ footer {
     }
 
     .big-image-box {
-        padding-left: 32px;
-        padding-top: 58px;
-        height: 390px;
+        padding-left: 0px;
+        padding-top: 0px;
+        /* height: 390px; */
+        margin: auto;
     }
 
-    .girl-image {
+     /* .girl-image {
         max-width: 330px;
-    }
+    } */
 
     .girl-image img {
-        max-width: 330px;
-    }
+        margin: auto;
+        max-width: 398px;
+    }  
 
 
     .cookies-image-4 {
         display: none;
     }
+    .event-alarm-box p{
+        font-size: 12px;
+    }
 
     .home-chokolate-main-box {
-        max-width: 398px;
+        /* max-width: 398px;
         padding-top: 80px;
         padding-left: 30px;
-        padding-right: 2px;
+        padding-right: 2px; */
+        margin: auto;
+        padding: 20px;
     }
 
     .adipiscing {
@@ -919,6 +940,9 @@ footer {
     .adipiscing p {
         font-size: 13px;
     }
+    .numeration{
+        padding-left: 14px;
+    }
 
     .type-comment span {
         margin-left: 130px;
@@ -927,8 +951,11 @@ footer {
     .footer-main-box {
         display: flex;
         flex-direction: column;
-        gap: 120px;
+        gap: 60px;
     }
+    .Delicious{
+        max-width: 398px;
+        margin: auto;}
 
     .about-box {
         grid-template-columns: 1fr;
