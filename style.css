@@ -198,7 +198,7 @@ nav ul li a:hover {
     position: relative;
     top: 54px;
     left: -104px;
-    box-shadow: 0px 15px 30px 0px rgba(224, 224, 236, 0.80);
+    box-shadow: 0px 4px 12px 0px rgba(224, 224, 236, 0.80);
 }
 
 .image-2-background {
@@ -440,8 +440,6 @@ nav ul li a:hover {
 /* ---- top recipe section */
 
 .recipe-main-box {
-
-    /* height: 574px; */
     border-radius: 20px;
     background: #FFF;
     margin-top: 54px;
@@ -452,27 +450,25 @@ nav ul li a:hover {
     margin: 100px auto;
     gap: 32px;
 }
-
 .big-image-box {
     padding-left: 32px;
     padding-top: 58px;
 }
-
-
 .two-chevron {
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -300px;
-
+    top: -250px;
 }
 
+.two-chevron img{
+border-radius: 20px;
+box-shadow: 0px 15px 12px 0px rgba(224, 224, 236, 0.80);
+}
 
 .cookies-image-4 {
     max-width: 125px;
-    /* height: 420px; */
     display: grid;
-    /* gap: 20px; */
     padding-top: 84px;
 }
 
@@ -522,7 +518,6 @@ nav ul li a:hover {
     line-height: 28px;
 }
 
-
 .adipiscing {
     width: 529px;
     height: 210px;
@@ -533,7 +528,6 @@ nav ul li a:hover {
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 29px;
-
 }
 
 .numeration {
@@ -542,7 +536,6 @@ nav ul li a:hover {
 
 .numeration li {
     list-style-type: number;
-
 }
 
 .folowers-img-box {
@@ -555,12 +548,10 @@ nav ul li a:hover {
     height: 30px;
 }
 
-
 .folowers-img-2 {
     position: relative;
     left: -15px;
 }
-
 
 .folowers-img-3 {
     position: relative;
@@ -571,7 +562,6 @@ nav ul li a:hover {
     position: relative;
     left: -45px;
 }
-
 
 .folowers-num {
     display: inline;
@@ -603,7 +593,6 @@ nav ul li a:hover {
     position: absolute;
     /* margin-left: 200px; */
 }
-
 
 
 
@@ -895,7 +884,8 @@ footer {
     .recipe-main-box {
         grid-template-columns: 1fr;
         height: auto;
-        width: auto;
+        max-width: 389px;
+        margin: 54px auto;
     }
 
     .big-image-box {
@@ -911,7 +901,7 @@ footer {
 
     .girl-image img {
         margin: auto;
-        max-width: 398px;
+        max-width: 350px;
     }  
 
 
@@ -923,12 +913,20 @@ footer {
     }
 
     .home-chokolate-main-box {
-        /* max-width: 398px;
+        max-width: 350px;
+        /* max-width: 350px;
         padding-top: 80px;
         padding-left: 30px;
         padding-right: 2px; */
         margin: auto;
-        padding: 20px;
+        padding-top: 20px;
+    }
+
+    .folowers-num span{
+        display: none;
+    }
+    .folowers-img-box{
+        padding-bottom: 20px;
     }
 
     .adipiscing {
